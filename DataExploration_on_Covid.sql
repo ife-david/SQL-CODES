@@ -38,6 +38,7 @@ ORDER BY totaldeathCount DESC
 SELECT location, MAX(cast(total_deaths as int)) AS totaldeathCount
 FROM PortfolioProjects..CovidDeaths$
 WHERE continent IS NULL
+AND location NOT IN ('World','Upper middle income', 'High income', 'Lower middle income', 'European Union', 'Low income', 'International')
 GROUP BY location
 ORDER BY totaldeathCount DESC
 
