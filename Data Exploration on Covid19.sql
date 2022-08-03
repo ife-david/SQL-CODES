@@ -10,10 +10,10 @@ ORDER BY 3,4
 
 --Total Cases vs Total Deaths
 
---SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS DeathPercentage
---FROM PortfolioProjects..CovidDeaths$
---WHERE location = 'Nigeria'
---ORDER BY 1,2
+SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS DeathPercentage
+FROM PortfolioProjects..CovidDeaths$
+WHERE location = 'Nigeria'
+ORDER BY 1,2
 
 --Covid cases in Nigeria
 SELECT location, date, total_cases, population, (total_cases/population)*100 AS DeathPercentage
