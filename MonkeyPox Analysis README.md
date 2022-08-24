@@ -16,6 +16,8 @@ For the analysis I carried out a series of operations with SQL Queries:
   5. Total MonkeyPox Cases in the World.
   6. Highest Cases Per Million.
 
+Data Source: https://raw.githubusercontent.com/owid/monkeypox/main/owid-monkeypox-data.csv
+
 There were NULL values in the data, but it had no effect on the analysis.
 
 For the second dataset, I carried out the following operations:
@@ -25,3 +27,4 @@ For the second dataset, I carried out the following operations:
   
  There were NULL values in the data, but it had no effect on the analysis
  
+Data Source: https://www.kaggle.com/datasets/deepcontractor/monkeypox-dataset-daily-updated
