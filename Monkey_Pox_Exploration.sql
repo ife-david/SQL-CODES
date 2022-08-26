@@ -16,8 +16,13 @@ SET CleanDate = CONVERT(Date, date)
 --Highest Deaths per Country
 SELECT location, MAX(total_deaths) AS TotalDeaths
 FROM ['Monkey Pox Full dataset$']
+WHERE location <> 'World'
 GROUP BY location
 ORDER BY TotalDeaths DESC
+
+UPDATE ['Monkey Pox Full dataset$']
+SET total_deaths = 0
+WHERE total_deaths IS NULL
 
 --Percantage of total deaths to total cases
 SELECT location, MAX(total_deaths/total_cases)*100 As PercentTotalDeath
